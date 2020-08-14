@@ -1,8 +1,8 @@
 (() => {
   let beat = 0, mspb = 1000, pressedAt = Date.now(), diff = 100
   let interval = setInterval(fn, mspb)
-  const beatdown = new Howl({ src: '/bin/beatdown.ogg' })
-  const beatup = new Howl({ src: '/bin/beatup.ogg' })
+  const beatdown = new Howl({ src: './bin/beatdown.ogg' })
+  const beatup = new Howl({ src: './bin/beatup.ogg' })
   const ani_beatup = anime.timeline({
     targets: ['.bg'],
     easing: 'easeInOutQuad'
