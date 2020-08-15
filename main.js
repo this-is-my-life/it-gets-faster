@@ -88,4 +88,12 @@
     }
     pressedAt = Date.now()
   })
+
+  window.addEventListener('click', () => {
+    if (mspb < 1000) {
+      mspb += 50
+      diff += 5
+    }
+    pressedAt = Date.now()
+  })
 })()
